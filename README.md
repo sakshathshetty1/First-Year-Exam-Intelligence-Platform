@@ -23,7 +23,17 @@ Faculty upload exam papers, the system extracts and analyzes questions, and stud
 
 ## Running the Project Locally
 
-1. **Install dependencies:**
+1. **Configure Environment Variables:**
+   Copy the example environment file and fill in your keys:
+   ```bash
+   cp .env.example .env.local
+   ```
+   Open `.env.local` and add your:
+   - `NEXT_PUBLIC_SUPABASE_URL`
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+   - `NEXT_PUBLIC_GEMINI_API_KEY`
+
+2. **Install dependencies:**
    ```bash
    npm install
    ```
